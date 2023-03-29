@@ -1,1 +1,48 @@
+body {
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(234, 231, 227);
+}
+
+.big-square-container {
+    background-color: rgb(234, 231, 227);
+}
+
+.big-square {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 20px;
+    /* border-style: solid;
+    border-color: rgb(237, 130, 8); */
+}
+.small-square {
+    
+    background-color: rgb(237, 130, 8);
+    border: none;
+    color: rgb(234, 231, 227);
+    font-size: 70px;
+}
+
+.play-again-container {
+    display: flex;
+    justify-content: center; 
+}
+.play-again-button{
+    min-height: 60px;
+    min-width: 340px;
+    margin-top: 50px;
+    color: rgb(237, 130, 8);
+    border: solid;
+    border-radius: 20px;
+    background-color: rgb(234, 231, 227);
+    font-size: 20px;
+}
+
+
+
+
 
