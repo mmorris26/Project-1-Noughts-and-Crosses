@@ -74,6 +74,19 @@ header {
     font-size: 100px;
     color: rgb(237, 130, 8);
 }
+.quotes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: rgb(237, 130, 8);
+    text-align: center;
+    min-width: 800px;
+    
+}
+.quote{
+    text-align: center;
+}
 
 
 

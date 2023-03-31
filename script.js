@@ -1,3 +1,6 @@
+
+
+
 let squaresButton = document.querySelectorAll(".small-square");
 let playAgainButton = document.querySelector(".play-again-button");
 let clickSum = 0;
@@ -10,10 +13,19 @@ let playerTwoScore = document.querySelector("#player-2 h2");
 let playerOneWinCount = 0;
 let playerTwoWinCount = 0;
 let winningMessage = document.querySelector("header");
+let clickNoise = new Audio("click-button-140881.mp3");
+let winNoise = new Audio("success-1-6297.mp3");
+let resetNoise = new Audio("window-wipe-106600.mp3");
+let quoteArray = [];
+let quotes = document.querySelector(".quotes");
+let drawNoise = new Audio("game-fx-9-40197.mp3");
+
 // Code to add event listeners to all tiles, put a X or O in a tile when clicked, and disable a tile once clicked
 for(let i = 0; i < 9; i++){
     squaresButton[i].addEventListener('click', event => {
-    squaresButton[i].innerText = "";    
+        
+  
+    clickNoise.play(); 
         if(clickSum % 2 === 0){
         squaresButton[i].innerText = "X";
       }
@@ -24,6 +36,10 @@ for(let i = 0; i < 9; i++){
       clickSum ++;
     isThereAWinner();
     whatIsTheOutcome();
+    showQuotes();
+    party.confetti(this);
+
+    
     
     })
     
@@ -33,6 +49,7 @@ for(let i = 0; i < 9; i++){
 playAgainButton.addEventListener("click", playAgain);
   
 function playAgain (){
+    resetNoise.play();
     for(let i = 0; i < 9; i++){
         squaresButton[i].disabled = false;
         squaresButton[i].innerText = " ";
@@ -40,6 +57,8 @@ function playAgain (){
         checkWinPlayerOne = 0;
         checkWinPlayerTwo = 0;
         winningMessage.innerText = " ";
+        quotes.innerText = " ";
+
     }
 }
 
@@ -109,38 +128,67 @@ function isThereAWinner(){
 
 function whatIsTheOutcome(){
     if((checkWinPlayerOne === 0 || checkWinPlayerTwo === 0) && clickSum === 9){
-        alert("it's a draw");
-        
+        drawNoise.play();
+        winningMessage.innerText = "It's a Draw";
+
     }
     if(checkWinPlayerOne === 1){
         playerOneScore.innerHTML = playerOneWinCount;
-        whoIsTheWinner()
+        whoIsTheWinner();
+        
         for(let i = 0; i < 9; i++){
             squaresButton[i].disabled = true;
         }
     }
     if(checkWinPlayerTwo === 1){
         playerTwoScore.innerText = playerTwoWinCount;
-        whoIsTheWinner()
+        whoIsTheWinner();
+        
         for(let i = 0; i < 9; i++){
             squaresButton[i].disabled = true;
         }
     }
 }
 
+
+
 function whoIsTheWinner(){
     if(checkWinPlayerOne === 1){
         winningMessage.innerText = "Player One Wins";
+        quotes.innerText = " ";
+        winNoise.play();
     }
     else if(checkWinPlayerTwo === 1){
         winningMessage.innerText = "Player Two Wins";
+        quotes.innerText = " ";
+        winNoise.play();
     }
 }
 
 
 
-//put in code to flash from a random array of text when a click has happened.
-//things like "go on click me", "ooooo I wouldn't click there", etc...
+quoteArray = [ 
+    "Ooooo, wouldn't do that if I were you!",
+    "Are you sure you want to do that??",
+    "Nice move",
+    "That's not what I would do!",
+    "Bold move!",
+    "Who do you think you are?",
+    "Gotcha",
+    "You bellend"
+];
 
-//put in sounds effects when users click a button
+
+
+function showQuotes(){
+    let randomNumber = Math.floor((Math.random() * (quoteArray.length)) + 0);
+    quotes.innerText = quoteArray[randomNumber];
+    
+}
+
+
+
+
+
+
 
