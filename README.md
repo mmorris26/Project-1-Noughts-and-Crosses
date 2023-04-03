@@ -39,7 +39,7 @@ Once these user stories were completed, I attempted to include the following bon
 
 This stage mostly involved sketching out a rough wireframe of what I wanted the product to look like. This did not include any functionality. Below is the wireframe I designed the project to;
 
-[IMG_4118.pdf](https://github.com/mmorris26/Project-1-Noughts-and-Crosses/files/11139376/IMG_4118.pdf)
+<img width="531" alt="image" src="https://user-images.githubusercontent.com/126505751/229548021-49ede703-d382-4227-8e50-d11c3a96cb3f.png">
 
 This is what my final project ended up looking like
 <img width="821" alt="image" src="https://user-images.githubusercontent.com/126505751/229542640-d1c5672e-e3a5-4a3c-a2e4-1efee805cffb.png">
