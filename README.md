@@ -96,6 +96,9 @@ buttons.disabled = 'true'
 * I then defined a function (isThereAWinner) that would have a for loop to iterate over all the rows, a for loop to iterate over all the columns and then two IF statements to check the diagonals.
 * If there were three consecutive X's or O's in any of these conditions I would increment a global variable to keep track of the number of wins assocaited with X's or O's.
 
+# Unsolved Problems
+
+
 
 
 
