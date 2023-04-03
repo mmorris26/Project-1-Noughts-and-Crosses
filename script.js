@@ -174,7 +174,7 @@ quoteArray = [
     "That's not what I would do!",
     "Bold move!",
     "Who do you think you are?",
-    "Gotcha",
+    "Gotcha"
     
 ];
 
