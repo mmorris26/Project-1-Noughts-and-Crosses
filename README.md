@@ -98,7 +98,12 @@ buttons.disabled = 'true'
 
 # Unsolved Problems
 
+### Computer Generated Responses
 
+* Some of the design choices I made at the beggining of the project made some of the requirements easier to fulfil, and some more difficult.
+* My choice of having the click count determine which player and hence, which symbol, would be populated in a tile made the user story around computer generated responses difficult to fulfil.
+* In my game the concept of a Player doesn't really exist, I just have that if the clickSum is even an X is put down, and if it's odd a O is put down.
+* This made it difficult to have a user select whether to play against a human or computer and I ran out of time to finish this feature.
 
 
 
