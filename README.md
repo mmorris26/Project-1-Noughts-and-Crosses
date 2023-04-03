@@ -72,7 +72,7 @@ I will cover some of the problems I faced with the other bonus features in the P
 
 # Design Decisions
 
-### Using an Buttons for the Tiles
+### Using Buttons for the Tiles
 
 * Initially I used divs for tiles but I found that the condition for not allowing a player to click the same tile twice, and not allowing a player to click a tile after a game finished to be more difficult than expected.
 * I then decided to use HTML buttons for the tiles as this allowed me to easily call the 'disabled' method on my tiles.
