@@ -47,7 +47,7 @@ This is what my final project ended up looking like
 
 As you can see the majority of the final product looks the same as the original apart from a few features.
 * I decided to have the scores placed either side of the board so I could put a random array of quotes below the board.
-* I decided to against a header and a footer and opted for a minimalist design philosophy. This is becasuse, as I started building the HTML and CSS, I liked the idea a sleek and minimalist game.
+* I decided to go against a header and a footer and opted for a minimalist design philosophy. This is becasuse, as I started building the HTML and CSS, I liked the idea a sleek and minimalist game.
 
 In total this stage took about 30 minutes.
 
