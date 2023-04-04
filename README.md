@@ -95,6 +95,8 @@ buttons.disabled = 'true'
 
 * I then defined a function (isThereAWinner) that would have a for loop to iterate over all the rows, a for loop to iterate over all the columns and then two IF statements to check the diagonals.
 * If there were three consecutive X's or O's in any of these conditions I would increment a global variable to keep track of the number of wins assocaited with X's or O's.
+* This function was called inside the for loop that set the event listeners on the tiles.
+* The event listener would be created first, then two IF statements would be checked, after this the whole state of the board would be checked by the winning conditions function.
 
 # Unsolved Problems
 
@@ -104,6 +106,27 @@ buttons.disabled = 'true'
 * My choice of having the click count determine which player and hence, which symbol, would be populated in a tile made the user story around computer generated responses difficult to fulfil.
 * In my game the concept of a Player doesn't really exist, I just have that if the clickSum is even an X is put down, and if it's odd a O is put down.
 * This made it difficult to have a user select whether to play against a human or computer and I ran out of time to finish this feature.
+
+# Improvements
+
+### Inefficient Code
+
+* This code operates with three main functions;
+
+  * isThereAWinner - My function for checking if winning conditions have been met.
+  * whatIsTheOutcome - Function for deciding if it is a win or draw
+  * whoIsTheWinner - Function for deciding if Player 1 or 2 wins.
+
+* The first point to note is that whatIsTheOutcome and whoIsTheWinner contain very similar code and could be combined into function that checks both operations at the same time.
+* The second point to note is that these three functions are called every time a player clicks a tile. This seems to be quite an inefficient way of running this game.
+* The function that would take longest to exectue is the winning conditions function and it checks the whole board for every possible winning combination, every time a tile is clicked.
+* An improvement here could be to modify the code so that it only starts calling this function when it is possible that a win could've happened, i.e. when the click count reaches 5 (starting at 0).
+
+### Object Orientated
+
+* The whole Javascript code is held within one file. Which makes it a little difficult to follow.
+* A further improvement could be to split the code out into different classes (one to represent Player 1 and one for Player 2).
+* When a player starts a new player object could be instantiated from the respective class.
 
 
 
