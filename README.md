@@ -53,7 +53,7 @@ In total this stage took about 30 minutes.
 
 ### Building
 
-In this stage I took my wireframe and built the HTML content first. This consited of a set of 9 buttons to represent the tiles encapsulated by two divs. The first div was to hold the 9 tiles, and the second was to hold that div and position it relative to the body.
+In this stage I took my wireframe and built the HTML content first. This consited of a set of 9 buttons to represent the tiles encapsulated by two divs. The first div was to hold the 9 tiles, and the second was to hold that div's and position relative to the body.
 
 I then went on to style my HTML with CSS and imported a new font called Quicksand from Google Fonts. I centered the main div with a flex and aligned it centrally both vertically and horizontally.
 
