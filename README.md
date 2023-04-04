@@ -57,7 +57,7 @@ In this stage I took my wireframe and built the HTML content first. This consite
 
 I then went on to style my HTML with CSS and imported a new font called Quicksand from Google Fonts. I centered the main div with a flex and aligned it centrally both vertically and horizontally.
 
-Once all of this was in place I started building out my Javascript. I will cover the details of the Javascript in the Design Choices section below however, at a high level I split the user stories into two; those that included winning conditions, and those that did not. I built the those that did not include winning conditions first which took me up to the end of day 1. The whole of day 2 involved building the winning conditions in Javascript and modifying the HTML and CSS to include new boxes for keeping track of the players scores.
+Once all of this was in place I started building out my Javascript. I will cover the details of the Javascript in the Design Choices section below however, at a high level I split the user stories into two; those that included winning conditions, and those that did not. I built the latter first which took me up to the end of day 1. The whole of day 2 involved building the winning conditions in Javascript and modifying the HTML and CSS to include new boxes for keeping track of the players scores.
 
 ### Refining
 
